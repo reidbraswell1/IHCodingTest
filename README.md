@@ -10,11 +10,21 @@ isNotPrime(12) => true\
 <insert code here>
   
 ```csharp
-    for (int i = 0 ; i < 10; i++)
-    {
-      // Code to execute.
-    }
-    ```
+        static bool isPrime(int number)
+        {
+
+            if (number == 1) return false;
+            if (number == 2) return true;
+
+            for (int i = 2; i <= Math.Ceiling(Math.Sqrt(number)); ++i)
+            {
+                if (number % i == 0) return false;
+            }
+
+            return true;
+
+        }
+```
 ## Problem 5
 
 Given three tables (Patients, Hospitals, and Visits), write a SQL query that returns the total number of patients over 65 who visited each hospital in 2017.
