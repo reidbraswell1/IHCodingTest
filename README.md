@@ -5,9 +5,16 @@
 
 Example:\
 isNotPrime(7) => false\
-isNotPrime(12) => true
+isNotPrime(12) => true\
 
 <insert code here>
+  
+```csharp
+    for (int i = 0 ; i < 10; i++)
+    {
+      // Code to execute.
+    }
+    ```
 ## Problem 5
 
 Given three tables (Patients, Hospitals, and Visits), write a SQL query that returns the total number of patients over 65 who visited each hospital in 2017.
