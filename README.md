@@ -37,6 +37,8 @@ lastUnique(“timedtestsarestressful”) => 21<br>
 lastUnique(“xabcabc”) => 0<br>
 lastUnique(“omnomnom”) => -1<br>
 
+\<insert code here>
+
 ## Problem 5
 
 Given three tables (Patients, Hospitals, and Visits), write a SQL query that returns the total number of patients over 65 who visited each hospital in 2017.
