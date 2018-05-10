@@ -85,7 +85,129 @@ countVowelWords(“testfile.txt”) =>
 \<insert code here>
 
 ``` csharp
+        static void countVowelWords(string fileName)
+        {
+            string text = File.ReadAllText("/home/reid/repos/test/test.txt");
 
+            var words = text.Split(' ');
+            var queryResultsA =
+                from n in words
+                where n.StartsWith('a')
+                orderby n ascending
+                select n;
+
+            var queryResultsE =
+                from n in words
+                where n.StartsWith('e')
+                orderby n ascending
+                select n;
+
+            var queryResultsI =
+                from n in words
+                where n.StartsWith('i')
+                orderby n ascending
+                select n;
+
+            var queryResultsO =
+                from n in words
+                where n.StartsWith('o')
+                orderby n ascending
+                select n;
+
+            var queryResultsU =
+                  from n in words
+                  where n.StartsWith('u')
+                  orderby n ascending
+                  select n;
+
+            var temp = "";
+            var count = 0;
+
+            if (queryResultsA.Count() > 0)
+            {
+                temp = queryResultsA.First();
+                count = 0;
+                foreach (var item in queryResultsA)
+                {
+                    if (item != temp)
+                    {
+                        Console.WriteLine($"{count} {temp}");
+                        temp = item;
+                        count = 0;
+                    }
+                    count++;
+                }
+                Console.WriteLine($"{count} {temp}");
+            }
+
+            if (queryResultsE.Count() > 0)
+            {
+                temp = queryResultsE.First();
+                count = 0;
+                foreach (var item in queryResultsE)
+                {
+                    if (item != temp)
+                    {
+                        Console.WriteLine($"{count} {temp}");
+                        temp = item;
+                        count = 0;
+                    }
+                    count++;
+                }
+                Console.WriteLine($"{count} {temp}");
+            }
+
+            if (queryResultsI.Count() > 0)
+            {
+                temp = queryResultsI.First();
+                count = 0;
+                foreach (var item in queryResultsI)
+                {
+                    if (item != temp)
+                    {
+                        Console.WriteLine($"{count} {temp}");
+                        temp = item;
+                        count = 0;
+                    }
+                    count++;
+                }
+                Console.WriteLine($"{count} {temp}");
+            }
+
+            if (queryResultsO.Count() > 0)
+            {
+                temp = queryResultsO.First();
+                count = 0;
+                foreach (var item in queryResultsO)
+                {
+                    if (item != temp)
+                    {
+                        Console.WriteLine($"{count} {temp}");
+                        temp = item;
+                        count = 0;
+                    }
+                    count++;
+                }
+                Console.WriteLine($"{count} {temp}");
+            }
+
+            if (queryResultsU.Count() > 0)
+            {
+                temp = queryResultsU.First();
+                count = 0;
+                foreach (var item in queryResultsU)
+                {
+                    if (item != temp)
+                    {
+                        Console.WriteLine($"{count} {temp}");
+                        temp = item;
+                        count = 0;
+                    }
+                    count++;
+                }
+                Console.WriteLine($"{count} {temp}");
+            }
+        
 ```
 
 ## Problem 5
