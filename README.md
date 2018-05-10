@@ -6,13 +6,11 @@ Message List
 
 ## Problem 5
 
-​
-
 Given three tables (Patients, Hospitals, and Visits), write a SQL query that returns the total number of patients over 65 who visited each hospital in 2017.
 
 ### Patients
 
-| `patient_id` | `name` | `date_of_birth` |
+|`patient_id` | `name` | `date_of_birth` |
 
 | ------------ | ------- | --------------- |
 
