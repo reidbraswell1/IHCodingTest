@@ -44,15 +44,19 @@ lastUnique(“omnomnom”) => -1<br>
 3) Write a function that given a path, will read in a file and print the number of occurrences of all words in the file that start with a vowel (‘a’, ‘e’, ‘i’, ‘o’, ‘u’). 
 
 Example:\
-countVowelWords(“testfile.txt”) =>\
+countVowelWords(“testfile.txt”) =>
+\
+\
 30 a\
 14 and\
 17 in\
 24 of\
 5 end\
-2 unde\r
+2 under\
 ...\
 
+``` java
+```
 
 ## Problem 5
 
