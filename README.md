@@ -39,6 +39,21 @@ lastUnique(“omnomnom”) => -1<br>
 
 \<insert code here>
 
+## Problem 3
+
+3) Write a function that given a path, will read in a file and print the number of occurrences of all words in the file that start with a vowel (‘a’, ‘e’, ‘i’, ‘o’, ‘u’). 
+
+Example:\
+countVowelWords(“testfile.txt”) =>\
+30 a\
+14 and\
+17 in\
+24 of\
+5 end\
+2 unde\r
+...\
+
+
 ## Problem 5
 
 Given three tables (Patients, Hospitals, and Visits), write a SQL query that returns the total number of patients over 65 who visited each hospital in 2017.
