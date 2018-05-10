@@ -253,6 +253,8 @@ The result would look something like:
 | Northside     | 163522           |
 
 
+\<insert SQL here>
+
 ```sql
 SELECT Hospitals.name AS 'Hospital Name',
        COUNT(Patients.patient_id) AS 'Patients Over 65'
