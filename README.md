@@ -9,7 +9,7 @@ Given three tables (Patients, Hospitals, and Visits), write a SQL query that ret
 
 ### Patients
 
-| `patient_id` | `name`  | `date_of_birth` |
+| patient_id | name  | date_of_birth |
 | ------------ | ------- | --------------- |
 | 1            | Alice   | 1965-04-02      |
 | 2            | Bob     | 1990-08-01      |
@@ -17,7 +17,7 @@ Given three tables (Patients, Hospitals, and Visits), write a SQL query that ret
 
 ### Hospitals
 
-| `hospital_id` | `name`    | `city`   |
+| hospital_id | name    | city   |
 | ------------- | --------- | -------- |
 | 1             | Emory     | Decatur  |
 | 2             | Grady     | Atlanta  |
@@ -25,7 +25,7 @@ Given three tables (Patients, Hospitals, and Visits), write a SQL query that ret
 
 ### Visits
 
-| `visit_id` | `patient_id` | `hospital_id` | `visit_date` |
+| visit_id | patient_id | hospital_id | visit_date |
 | ---------- | ------------ | ------------- | ------------ |
 | 1          | 2            | 2             | 2016-05-30   |
 | 2          | 1            | 3             | 2016-08-04   |
