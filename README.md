@@ -40,10 +40,11 @@ lastUnique(“omnomnom”) => -1<br>
 \<insert code here>
 
 ```java
-public static Character getCharacter(String input){
+public static int getCharacter(String input){
        //remove all the spaces
        input = input.replaceAll(" ", "");
        Character nonRptChar = null;
+       int indexNonRptChar = -1;
        //Will store each character and it's count
        HashMap<Character, Integer> map = new HashMap<>();
        for (int i = 0; i <input.length(); i++) {
@@ -58,10 +59,11 @@ public static Character getCharacter(String input){
        for (int i = input.length()-1; i >=0; i--) {
            if(map.get(input.charAt(i))==1){
                nonRptChar = input.charAt(i);
+               indexNonRptChar = i;
                break;
            }
        }
-       return nonRptChar;
+       return indexNonRptChar;
 }
 
 ```
@@ -249,3 +251,14 @@ The result would look something like:
 | Emory         | 125403           |
 | Grady         | 84537            |
 | Northside     | 163522           |
+
+
+```sql
+SELECT Hospitals.name AS 'Hospital Name',
+       COUNT(Patients.patient_id) AS 'Patients Over 65'
+FROM Patients
+JOIN Visits ON Visits.patient_id = Patients.patient_id
+JOIN Hospitals ON Hospitals.hospital_id = Visits.hospital_id
+WHERE (YEAR(CURRENT_TIMESTAMP) - YEAR(Patients.date_of_birth)) > 65;
+
+```
