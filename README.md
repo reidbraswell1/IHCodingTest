@@ -3,8 +3,8 @@
 ## Problem 1
 1) Write a function that take and integer and returns a boolean of false when the integer is a prime number and true if it is not.  A prime number is a number greater than 1 that has no positive divisors other than 1 and itself.
 
-Example:
-isNotPrime(7) => false
+Example:\
+isNotPrime(7) => false\
 isNotPrime(12) => true
 
 <insert code here>
