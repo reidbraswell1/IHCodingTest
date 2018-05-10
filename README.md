@@ -25,6 +25,15 @@ isNotPrime(12) => true<br>
 
         }
 ```
+## Problem 2
+
+2) Given a string, find the last unique (non-repeating) character in it and return it's index. If it doesn't exist, return -1. 
+
+Example:
+lastUnique(“timedtestsarestressful”) => 21
+lastUnique(“xabcabc”) => 0
+lastUnique(“omnomnom”) => -1
+
 ## Problem 5
 
 Given three tables (Patients, Hospitals, and Visits), write a SQL query that returns the total number of patients over 65 who visited each hospital in 2017.
