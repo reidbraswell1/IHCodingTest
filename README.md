@@ -5,7 +5,7 @@
 
 Example:\
 isNotPrime(7) => false\
-isNotPrime(12) => true\
+isNotPrime(12) => true
 
 <insert code here>
   
