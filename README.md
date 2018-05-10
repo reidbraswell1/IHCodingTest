@@ -10,11 +10,7 @@ Message List
 
 Given three tables (Patients, Hospitals, and Visits), write a SQL query that returns the total number of patients over 65 who visited each hospital in 2017.
 
-​
-
 ### Patients
-
-​
 
 | `patient_id` | `name` | `date_of_birth` |
 
@@ -26,11 +22,9 @@ Given three tables (Patients, Hospitals, and Visits), write a SQL query that ret
 
 | 3      | Charlie | 1982-07-05   |
 
-​
 
 ### Hospitals
 
-​
 
 | `hospital_id` | `name`  | `city`  |
 
@@ -42,11 +36,9 @@ Given three tables (Patients, Hospitals, and Visits), write a SQL query that ret
 
 | 3       | Northside | Dunwoody |
 
-​
 
 ### Visits
 
-​
 
 | `visit_id` | `patient_id` | `hospital_id` | `visit_date` |
 
@@ -62,15 +54,12 @@ Given three tables (Patients, Hospitals, and Visits), write a SQL query that ret
 
 | 5     | 1      | 2       | 2017-04-01  |
 
-​
 
 The result would look something like:
 
-​
 
 ### Results
 
-​
 
 | Hospital Name | Patients Over 65 |
 
@@ -81,9 +70,3 @@ The result would look something like:
 | Grady     | 84537      |
 
 | Northside   | 163522      |
-
-@channel
-Message Input
-
-
-Message #class-mark3
