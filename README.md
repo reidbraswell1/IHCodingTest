@@ -7,7 +7,7 @@ Example:\
 isNotPrime(7) => false<br>
 isNotPrime(12) => true<br>
 
-<insert code here>
+\<insert code here>
   
 ```csharp
         static bool isPrime(int number)
