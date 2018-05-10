@@ -39,6 +39,33 @@ lastUnique(“omnomnom”) => -1<br>
 
 \<insert code here>
 
+```java
+public static Character getCharacter(String input){
+       //remove all the spaces
+       input = input.replaceAll(" ", "");
+       Character nonRptChar = null;
+       //Will store each character and it's count
+       HashMap<Character, Integer> map = new HashMap<>();
+       for (int i = 0; i <input.length(); i++) {
+           Character chr = input.charAt(i);
+           if(map.containsKey(chr)){
+               map.put(chr,map.get(chr)+1);
+           }else{
+               map.put(chr, 1);
+           }
+       }
+       //Iterate the string from right to left and return the character for which the count is 1 in map
+       for (int i = input.length()-1; i >=0; i--) {
+           if(map.get(input.charAt(i))==1){
+               nonRptChar = input.charAt(i);
+               break;
+           }
+       }
+       return nonRptChar;
+}
+
+```
+
 ## Problem 3
 
 3) Write a function that given a path, will read in a file and print the number of occurrences of all words in the file that start with a vowel (‘a’, ‘e’, ‘i’, ‘o’, ‘u’). 
@@ -53,9 +80,12 @@ countVowelWords(“testfile.txt”) =>
 24 of\
 5 end\
 2 under\
-...\
+\...<br>
 
-``` java
+\<insert code here>
+
+``` csharp
+
 ```
 
 ## Problem 5
