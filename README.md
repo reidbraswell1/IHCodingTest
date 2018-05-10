@@ -9,6 +9,9 @@ Message List
 Given three tables (Patients, Hospitals, and Visits), write a SQL query that returns the total number of patients over 65 who visited each hospital in 2017.
 
 ### Patients
+| test | test2 | test3 |
+| ----- | ---- | ----- |
+| 1 | 2 | 3 |
 
 |`patient_id` | `name` | `date_of_birth` |
 
