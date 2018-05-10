@@ -29,7 +29,9 @@ isNotPrime(12) => true<br>
 
 2) Given a string, find the last unique (non-repeating) character in it and return it's index. If it doesn't exist, return -1. 
 \
+\
 Example:
+\
 \
 lastUnique(“timedtestsarestressful”) => 21<br>
 lastUnique(“xabcabc”) => 0<br>
